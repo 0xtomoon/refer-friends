@@ -1,0 +1,235 @@
+.App-main {
+  background-color: #efefef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+}
+
+.share-container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.share-container input {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.share-container input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+.share-title {
+  text-align: left;
+  margin: 10px 0px;
+  font-size: 42px;
+}
+
+.share-link-text {
+  text-align: left;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.share-left-box {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.share-link-group {
+  display: flex;
+  width: 100%;
+}
+
+.share-link-input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+  height: 40px;
+  color: #666666;
+  background-color: #efefef;
+  border: none;
+}
+
+.share-link-clip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #509d00;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+
+.share-link-clip .tooltiptext {
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.share-link-clip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.share-link-clip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.share-welcome-text {
+  margin: 20px 0;
+}
+
+.activity-feed-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.activity-feed-table td, th {
+  border: 0px;
+  text-align: left;
+  padding: 10px;
+}
+
+.activity-feed-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.activity-feed-table tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+.activity-total td {
+  text-align: right;
+}
+
+.share-subcontainer {
+  display: flex;
+  height: 400px;
+}
+
+.share-right-box {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.share-box-group {
+  display: flex;
+  width: 100%;
+}
+
+.share-box-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  cursor: pointer;
+  height: 40px;
+}
+
+.email-tab {
+  background-color: #9b9b9b;
+}
+
+.facebook-tab {
+  background-color: #0062a8;
+}
+
+.twitter-tab {
+  background-color: #2aa0e9;
+}
+
+.lgo-tab {
+  background-color: #499f00;
+}
+
+.active-tab {
+  position: relative;
+}
+
+.active-tab:after {
+  content: "";
+  border-top: .5em solid #9b9b9b;
+  border-right: .5em solid transparent;
+  border-bottom: 0;
+  border-left: .5em solid transparent;
+  position: absolute;
+  top: 100%;
+}
+
+.share-box-container {
+  display: flex;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.share-box-inner {
+  width: 100%;
+}
+
+.share-box-email {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.share-box-email input{
+  width: 100%;
+  height: 40px;
+  color: #666666;
+  background-color: #ffffff;
+  border: none;
+}
+
+.share-box-message {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.share-box-message textarea {
+  width: 100%;
+  height: 129px;
+  padding: 10px;
+  color: #666666;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+
+.send-btn {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #499f00;
+  border: none;
+  height: 40px;
+  width: 150px;
+  color: white;
+  font-size: 18px;
+}
